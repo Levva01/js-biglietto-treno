@@ -1,8 +1,8 @@
-const nKm = Number(prompt("Quanti chilometri vuoi percorrere?"));
-const age = Number(prompt("Età del passeggero: "));
+let nKm = Number(prompt("Inserisci il numero di chilometri"));
+let age = Number(prompt("Inserisci l'età"));
+
 
 let travelPrice = nKm * 0.21;
-alert(travelPrice);
 
 if(age < 18){
     travelPrice = (travelPrice - (travelPrice * 20 / 100));
@@ -10,4 +10,4 @@ if(age < 18){
     travelPrice = (travelPrice - (travelPrice * 40 / 100));
 }
 
-alert(travelPrice);
+alert(`Il costo totale del biglietto è: € ${travelPrice.toFixed(2)}`);
